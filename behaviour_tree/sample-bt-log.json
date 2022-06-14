@@ -1,0 +1,191 @@
+{
+  "name": "DebugGuard",
+  "value": 24.75711679458618,
+  "children": [
+    {
+      "name": "Workflow",
+      "value": 24.756958961486816,
+      "children": [
+        {
+          "name": "FailureIsSuccess",
+          "value": 24.656954050064087,
+          "children": [
+            {
+              "name": "TaskSequenceGuard",
+              "value": 24.656914472579956,
+              "children": [
+                {
+                  "name": "TaskSequence",
+                  "value": 24.65687370300293,
+                  "children": [
+                    {
+                      "name": "planning_stage",
+                      "value": 9.613988876342773,
+                      "children": [
+                        {
+                          "name": "planning_stage",
+                          "value": 9.613932371139526,
+                          "children": [
+                            {
+                              "name": "FindParcelToPickOrClear",
+                              "value": 9.613905191421509,
+                              "children": [
+                                {
+                                  "name": "FindParcelToPickOrTimeout",
+                                  "value": 9.614240884780884,
+                                  "children": [
+                                    {
+                                      "name": "Sequence",
+                                      "value": 9.61456298828125,
+                                      "children": [
+                                        {
+                                          "name": "FailureIsRunning",
+                                          "value": 9.614355087280273,
+                                          "children": [
+                                            {
+                                              "name": "ChooseParcelOrReject",
+                                              "value": 9.614618062973022,
+                                              "children": [
+                                                {
+                                                  "name": "ChooseActiveParcel",
+                                                  "value": 9.61478877067566,
+                                                  "children": []
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "approaching_stage",
+                      "value": 5.016878604888916,
+                      "children": [
+                        {
+                          "name": "approaching_stage",
+                          "value": 5.016927242279053,
+                          "children": [
+                            {
+                              "name": "Approach",
+                              "value": 5.016963005065918,
+                              "children": [
+                                {
+                                  "name": "GoToParcel",
+                                  "value": 5.01697301864624,
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "picking_stage",
+                      "value": 3.7081196308135986,
+                      "children": [
+                        {
+                          "name": "picking_stage",
+                          "value": 3.7079479694366455,
+                          "children": [
+                            {
+                              "name": "PickParcel",
+                              "value": 2.204901933670044,
+                              "children": [
+                                {
+                                  "name": "TryToPick",
+                                  "value": 2.20491099357605,
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "name": "UndoBounceMotion",
+                              "value": 1.5017328262329102,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "placing_stage",
+                      "value": 6.308660984039307,
+                      "children": [
+                        {
+                          "name": "Deposit or Failthrough",
+                          "value": 6.308769941329956,
+                          "children": [
+                            {
+                              "name": "DepositParcel",
+                              "value": 6.308950901031494,
+                              "children": [
+                                {
+                                  "name": "PlaceParcel",
+                                  "value": 6.3091347217559814,
+                                  "children": [
+                                    {
+                                      "name": "GoToConveyor",
+                                      "value": 6.206855535507202,
+                                      "children": []
+                                    },
+                                    {
+                                      "name": "DropParcel",
+                                      "value": 0.10008835792541504,
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FailureIsSuccess",
+          "value": 0.09663939476013184,
+          "children": [
+            {
+              "name": "TaskStartGuard",
+              "value": 0.09650087356567383,
+              "children": [
+                {
+                  "name": "TaskStart",
+                  "value": 0.09635210037231445,
+                  "children": [
+                    {
+                      "name": "Sequence",
+                      "value": 0.0962214469909668,
+                      "children": [
+                        {
+                          "name": "[Vacuum]",
+                          "value": 0.0958411693572998,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

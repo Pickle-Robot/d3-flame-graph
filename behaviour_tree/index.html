@@ -61,7 +61,7 @@
             </form>
           </div>
         </nav>
-        <h3 style="color:#008000">pickle-behaviour-tree</h3>
+        <h3 style="color:#00a95c">pickle-robot-company</h3>
       </div>
       <div id="chart">
       </div>
@@ -81,15 +81,15 @@
     var chart = flamegraph()
       .width(960)
       .cellHeight(18)
-      .transitionDuration(50)
+      .transitionDuration(250)
       .minFrameSize(5)
       .transitionEase(d3.easeCubic)
       .sort(false)
-      .title("")
+      .title("Taskloop Behaviour Tree")
       .onClick(onClick)
       .selfValue(false)
       .setColorMapper((d, originalColor) =>
-        d.highlight ? "#6aff8f" : originalColor);
+        d.highlight ? "#4CBB17" : originalColor);
 
     // Example on how to use custom a tooltip.
     var tip = flamegraph.tooltip.defaultFlamegraphTooltip()
