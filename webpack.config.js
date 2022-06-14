@@ -40,7 +40,7 @@ module.exports = [{
         ]
     },
     devServer: {
-        static: [path.join(__dirname, 'examples'), path.join(__dirname, 'dist')]
+        static: [path.join(__dirname, 'behaviour_tree'), path.join(__dirname, 'dist')]
     }
 }, {
     context: path.join(__dirname, 'src'),
